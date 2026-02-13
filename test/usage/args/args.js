@@ -1,0 +1,39 @@
+import { Args } from "../../../dist/cmd.js";
+
+let cli = new Args;
+// bun run test/usage/args/args.js array length
+/*
+{
+  args: {
+    method: "array",
+    arguments: [ "length" ],
+  },
+  flags: {},
+}
+*/
+// bun run test/usage/args/args.js array insert -o 0 'new'
+/*
+{
+  args: {
+    method: "array",
+    arguments: [ "insert" ],
+  },
+  flags: {
+    option: [ 0, "new" ],
+  },
+}
+*/
+// bun run test/usage/args/args.js array insert -o 0 'new' --force
+/*
+{
+  args: {
+    method: "array",
+    arguments: [ "insert" ],
+  },
+  flags: {
+    option: [ 0, "new" ],
+    force: true,
+  },
+}
+*/
+console.log(cli)

@@ -1,1 +1,80 @@
-# cmd
+# Cmd
+
+JS Command utility
+
+## Usage
+
+<details name="usage"><summary>Basic</summary>
+<br>
+
+File: `cli.js`
+
+```js
+import { Args } from "@jlongyam/cmd";
+
+const cli = new Args();
+
+console.log(cli);
+```
+
+Use:
+
+```txt
+node cli.js array length
+bun run cli.js array length
+deno run cli.js array length
+```
+
+Output:
+
+```js
+{
+  args: {
+    method: "array",
+    arguments: [ "length" ],
+  },
+  flags: {},
+}
+```
+
+</details>
+<details name="usage"><summary>Advance</summary>
+<br>
+
+File: `cli.js`
+
+```js
+import { Args } from "@jlongyam/cmd";
+
+let cli = new Args({
+  alias: { f: 'file' },
+  array: ['file']
+});
+
+console.log(cli);
+```
+Use:
+
+```txt
+bun run test/usage/args/custom/array_alias.js -f a.js b.js
+```
+
+Output:
+
+```js
+{
+  args: {
+    method: undefined,
+    arguments: [],
+  },
+  flags: {
+    file: [ "a.js", "b.js" ],
+  },
+}
+```
+
+</details>
+
+## More
+
+See more usage in __test/usage__
