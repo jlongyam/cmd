@@ -1,4 +1,4 @@
-function showHelp(cmd, option) {
+function showHelp(cmd, option = {}) {
   let message = '';
   if(cmd.args.method === undefined) {
     message += 'Usage:  <method> <command> [option]\n';
