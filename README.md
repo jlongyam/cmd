@@ -110,7 +110,16 @@ Output:
 
 See more usage in __test/usage__
 
-## Tested
+## Note
+
+Tested:
 
 - node v5.12.0
 - npm v3.8.6
+
+Legacy node require `Array.includes` polyfill
+
+## Related
+
+- [@jlongyam/polyfill](https://github.com/jlongyam/polyfill)
+
