@@ -19,14 +19,17 @@
     "build:flags": "bun build --production --format=esm --outfile=src/flags.js src/flags.cjs",
     "build:cmd": "bun build --production --format=esm --outfile=dist/cmd.mjs src/cmd.js",
     "build:cmd:cjs": "bun build --production --format=cjs --outfile=dist/cmd.cjs src/cmd.js",
-    "test": "bun test"
+    "test": "bun test",
+    "types": "tsc"
   },
   "devDependencies": {
-    "flaget": "^2.1.1"
+    "flaget": "^2.1.1",
+    "typescript": "^5.9.3"
   },
   "exports": {
     "import": "./dist/cmd.mjs",
-    "require": "./dist/cmd.cjs"
+    "require": "./dist/cmd.cjs",
+    "types": "./dist/cmd.d.mts"
   },
   "files": [
     "dist",

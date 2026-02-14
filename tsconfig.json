@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "./dist/cmd.mjs"
+  ],
+  "exclude": [
+    "node_modules",
+    "src",
+    "test"
+  ]
+}
