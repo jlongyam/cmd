@@ -2,7 +2,7 @@ import { Args } from "../../../dist/cmd.js";
 
 let cli = new Args;
 
-// bun run test/usage/args/custom/array.js --option 1,2,3
+// bun run test/usage/args/custom/array.js --option 1 2 3
 /*
 
   args: {
@@ -10,7 +10,7 @@ let cli = new Args;
     arguments: [],
   },
   flags: {
-    option: [ "1,2,3" ],
+    option: [ 1, 2, 3 ],
   },
 }
 */

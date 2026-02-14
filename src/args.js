@@ -7,7 +7,7 @@ class Args {
     array: ['option'],
     boolean: ['force']
   }
-  #combine(original, update) {
+  combine(original, update) {
     return [...new Set([...original, ...update])]
   }
   constructor(option = {}) {
@@ -15,12 +15,12 @@ class Args {
       Object.assign(this.option.alias, option.alias);
     }
     if(option.array) {
-      let combined =  this.#combine(this.option.array, option.array);
+      let combined =  this.combine(this.option.array, option.array);
       this.option.array = combined;
     }
     if(option.boolean) {
       this.option.boolean.push(option.boolean);
-      let combined =  this.#combine(this.option.boolean, option.boolean);
+      let combined =  this.combine(this.option.boolean, option.boolean);
       this.option.boolean = combined;
     }
     const args = flags(this.option);
@@ -31,7 +31,7 @@ class Args {
     if(tail) {
       args.tail = {
         exec: tail[0],
-        option: tail.slice(1)
+        command: tail.slice(1).join(' ')
       };
     }
     return args;

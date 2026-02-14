@@ -3,7 +3,7 @@ import { Args } from "../../../dist/cmd.js";
 let cli = new Args;
 
 // bun run test/usage/args/alias.js --version
-// bun run test/usage/args/alias.js -v-v
+// bun run test/usage/args/alias.js -v
 /*
 {
   args: {
