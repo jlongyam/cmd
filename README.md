@@ -3,7 +3,38 @@
 JS Command utility
 
 ## Usage
+<details name="usage"><summary>Install</summary>
+<br>
 
+### Deno
+
+```js
+import { Args, showHelp } from 'npm:@jlongyam/cmd';
+```
+
+- optional
+
+```sh
+deno add 'npm:@jlongyam/cmd'
+```
+
+```js
+import { Args, showHelp } from '@jlongyam/cmd';
+```
+
+### NPM
+
+```sh
+npm i @jlongyam/cmd
+```
+
+### Bun
+
+```sh
+bun add @jlongyam/cmd
+```
+
+</details>
 <details name="usage"><summary>Basic</summary>
 <br>
 
