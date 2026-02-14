@@ -2,7 +2,7 @@ import { Args } from "../../../dist/cmd.mjs";
 
 let cli = new Args;
 
-// bun run test/usage/args/custom/array.js --option 1 2 3
+// bun run test/usage/args/array.mjs  --option 1 2 3
 /*
 
   args: {

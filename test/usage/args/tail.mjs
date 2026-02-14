@@ -1,7 +1,7 @@
 import { Args } from '../../../dist/cmd.mjs';
 
 const cli = new Args();
-// bun test/usage/args/tail.js file read -i file.js -- npm run dev -w
+// bun test/usage/args/tail.mjs file read -i file.js -- npm run dev -w
 /*
 {
   args: {

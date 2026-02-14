@@ -3,7 +3,7 @@ import { Args } from "../../../../dist/cmd.mjs";
 let cli = new Args({
   array: ['file']
 });
-// bun run test/usage/args/custom/array.js --file a.js b.js
+// bun run test/usage/args/custom/array.mjs --file a.js b.js
 /*
 {
   args: {

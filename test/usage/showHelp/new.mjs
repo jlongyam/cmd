@@ -3,7 +3,7 @@ import { Args, showHelp } from "../../../dist/cmd.mjs";
 const cli = new Args();
 
 if(cli.flags.help) {
-  // bun run test/usage/showHelp/new.js file -h
+  // bun run test/usage/showHelp/new.mjs file -h
   if(cli.args.method === 'file') {
     showHelp(cli, {
       method: {
@@ -15,7 +15,7 @@ if(cli.flags.help) {
       }
     });
   }
-  // bun run test/usage/showHelp/new.js folder -h
+  // bun run test/usage/showHelp/new.mjs folder -h
   else if(cli.args.method === 'folder') {
     showHelp(cli, {
       method: {
@@ -26,7 +26,7 @@ if(cli.flags.help) {
       }
     });
   }
-  // bun run test/usage/showHelp/new.js -h
+  // bun run test/usage/showHelp/new.mjs -h
   else {
     showHelp(cli, {
       methods: ['file <command>', 'folder <command>']

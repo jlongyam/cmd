@@ -1,7 +1,7 @@
 import { Args } from "../../../dist/cmd.mjs";
 
 let cli = new Args;
-// bun run test/usage/args/args.js array length
+// bun run test/usage/args/args.mjs array length
 /*
 {
   args: {
@@ -11,7 +11,7 @@ let cli = new Args;
   flags: {},
 }
 */
-// bun run test/usage/args/args.js array insert -o 0 'new'
+// bun run test/usage/args/args.mjs array insert -o 0 'new'
 /*
 {
   args: {
@@ -23,7 +23,7 @@ let cli = new Args;
   },
 }
 */
-// bun run test/usage/args/args.js array insert -o 0 'new' --force
+// bun run test/usage/args/args.mjs array insert -o 0 'new' --force
 /*
 {
   args: {

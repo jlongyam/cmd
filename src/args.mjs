@@ -1,4 +1,4 @@
-import flags from './flags.js';
+import flags from './flags.mjs';
 
 class Args {
   option = {

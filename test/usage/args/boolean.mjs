@@ -1,7 +1,7 @@
 import { Args } from "../../../dist/cmd.mjs";
 
 let cli = new Args;
-// bun run test/usage/args/boolean.js --force
+// bun run test/usage/args/boolean.mjs --force
 /*
 {
   args: {
@@ -13,7 +13,7 @@ let cli = new Args;
   },
 }
 */
-// bun run test/usage/args/boolean.js --debug
+// bun run test/usage/args/boolean.mjs --debug
 /*
 {
   args: {
@@ -25,7 +25,7 @@ let cli = new Args;
   },
 }
 */
-// bun run test/usage/args/boolean.js --logout --force
+// bun run test/usage/args/boolean.mjs --logout --force
 /*
 {
   args: {

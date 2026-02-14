@@ -1,7 +1,7 @@
 import { Args } from "../../../dist/cmd.mjs";
 
 let cli = new Args;
-// bun run test/usage/args/new.js
+// bun run test/usage/args/new.mjs
 /*
 {
   args: {

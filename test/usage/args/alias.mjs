@@ -2,7 +2,7 @@ import { Args } from "../../../dist/cmd.mjs";
 
 let cli = new Args;
 
-// bun run test/usage/args/alias.js --version
+// bun run test/usage/args/alias.mjs --version
 // bun run test/usage/args/alias.js -v
 /*
 {
@@ -16,8 +16,8 @@ let cli = new Args;
 }
 */
 
-// bun run test/usage/args/alias.js --help
-// bun run test/usage/args/alias.js -h
+// bun run test/usage/args/alias.mjs --help
+// bun run test/usage/args/alias.mjs -h
 /*
 {
   args: {
@@ -30,8 +30,8 @@ let cli = new Args;
 }
 */
 
-// bun run test/usage/args/alias.js --option a.js b.js
-// bun run test/usage/args/alias.js -o a.js b.js
+// bun run test/usage/args/alias.mjs --option a.js b.js
+// bun run test/usage/args/alias.mjs -o a.js b.js
 /*
 {
   args: {

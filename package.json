@@ -13,16 +13,23 @@
     "url": "git+https://github.com/jlongyam/cmd.git"
   },
   "homepage": "https://github.com/jlongyam/cmd",
-  "main": "./dist/cmd.mjs",
+  "main": "./dist/cmd.cjs",
   "scripts": {
-    "build:flags": "bun build --production --format=esm --outfile=src/flags.js src/flags.cjs",
-    "build:cmd": "bun build --production --format=esm --outfile=dist/cmd.mjs src/cmd.js",
-    "build:cmd:cjs": "bun build --production --format=cjs --outfile=dist/cmd.cjs src/cmd.js",
+    "build:flags": "bun build --format=esm --outfile=src/flags.mjs src/flags.cjs",
+    "build:cmd": "bun build --production --format=esm --outfile=dist/cmd.mjs src/cmd.mjs",
+    "build:cmd:cjs": "rollup -c",
     "test": "bun test",
     "types": "tsc"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.29.0",
+    "@rollup/plugin-babel": "^6.1.0",
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "es-check": "^9.5.4",
     "flaget": "^2.1.1",
+    "rollup": "^4.57.1",
     "typescript": "^5.9.3"
   },
   "exports": {
