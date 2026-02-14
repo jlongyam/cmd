@@ -109,3 +109,8 @@ Output:
 ## More
 
 See more usage in __test/usage__
+
+## Tested
+
+- node v5.12.0
+- npm v3.8.6
