@@ -1,4 +1,4 @@
-import { Args, showHelp } from "../../../dist/cmd.js";
+import { Args, showHelp } from "../../../dist/cmd.mjs";
 
 const cli = new Args();
 

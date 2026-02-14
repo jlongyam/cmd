@@ -1,4 +1,4 @@
-import { Args } from "../../../../dist/cmd.js";
+import { Args } from "../../../../dist/cmd.mjs";
 
 let cli = new Args({
   alias: { f: 'file' },

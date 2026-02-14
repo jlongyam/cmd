@@ -1,4 +1,4 @@
-import { Args } from '../../../dist/cmd.js';
+import { Args } from '../../../dist/cmd.mjs';
 
 const cli = new Args();
 // bun test/usage/args/tail.js file read -i file.js -- npm run dev -w

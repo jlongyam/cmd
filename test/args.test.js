@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import { Args } from "../dist/cmd.js";
+import { Args } from "../dist/cmd.mjs";
 
 describe('cmd', ()=> {
   test('new Args', ()=> {
