@@ -1,6 +1,6 @@
 {
   "name": "@jlongyam/cmd",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "JS Command utility",
   "keywords": [
     "args",
