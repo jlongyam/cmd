@@ -121,5 +121,5 @@ Legacy node require `Array.includes` polyfill
 
 ## Related
 
-- [@jlongyam/polyfill](https://github.com/jlongyam/polyfill)
+- [polyfill](https://github.com/jlongyam/polyfill)
 
